@@ -1,0 +1,113 @@
+
+
+@charset "utf-8";
+
+
+
+body{
+    background-image: url(ray.jpg);
+    background-size: 100%;
+    margin: 0;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: larger;
+}
+
+#calculator{
+    
+    max-width: 360px;
+    background-color: rgba(248, 244, 16, 0.537);
+    border-radius: 9px;
+    padding: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.563);
+    font-family: 'Enriqueta', serif;
+}
+
+#display{  /*regiao onde fica a digitação*/
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(165, 243, 203);
+    border: none;   /*tira a bordinha escura*/
+    box-sizing: border-box;
+    font-family: 'Enriqueta', serif;
+    
+
+}
+
+.igual{   /*altera sinal de igual*/
+    width: calc(50% - 10px);
+}
+
+button{
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    float: left;  /*alinha os botoes  a esquerda*/
+    background-color: rgb(198, 227, 250);
+    border-radius: 5px;
+    box-shadow: -1px 3px 2px;
+    font-family: 'Enriqueta', serif;
+   
+
+}
+
+#ac{   /*altera a tecla de apagar C*/
+    background-color:rgba(161, 230, 121, 0.79);
+   
+}
+
+button:hover{   /*botoes */
+    cursor: pointer;    /*ao passar o mouse em cima dos botoes ele altera o cursos*/
+}
+
+button:active{    /*quando clica nos botoes*/
+    transform: scale(1.1);     /*faz o botao saltar quando clica em cima */
+    box-shadow: none;           /*tira a sombra */
+    
+}
+
+#de{
+    background-color: rgb(205, 158, 250);
+}
+
+.operator{
+    background-color: rgb(250, 164, 190);
+}
+
+footer{
+
+    background-image: none;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Enriqueta', serif;
+    position: fixed;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Enriqueta', serif;
+ 
+
+}
